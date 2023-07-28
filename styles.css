@@ -1,0 +1,377 @@
+body{
+
+    font-family: 'Droid Serif', serif !important;
+    font-size: 14px !important;
+    color: #ffffff;
+    background-color:  #F5F2E8 !important;
+    align-content: center !important;
+    
+}
+
+.desc{
+    text-transform: capitalize;
+}
+
+.icon{
+    height: 20px !important;
+    width: 20px !important;
+}
+
+/* header{
+    font-size: larger;
+    font-family: 'Playfair Display', serif ;
+    font-weight: 900;
+    font-size: 5rem;
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: 72px;
+    margin-bottom: 5px;
+    text-align: center !important;
+    margin-left: 100px!important;
+    margin-top: 25px;
+} */
+
+
+.head{
+    position: absolute;
+    text-align: center;
+    align-content: center !important;
+    position: relative;
+}
+
+#ele-img{
+
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    right: -89px;
+    bottom: 60px;
+
+
+}
+
+#ele-img2{
+    
+    
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    left: 12px;
+    transform: scalex(-1) ;
+    bottom: 60px;
+
+}
+
+
+#card {
+    
+    width: 350px;
+    min-height: 380px;
+    box-shadow: 0 0 10px rgb(139, 139, 139);
+    cursor: pointer;
+    background-color: #f9f7f1;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    margin: 0% 11px 0% 11px;
+    border: solid black !important;
+    border-width: 1.5px !important;
+    
+    
+}
+
+#card:hover{
+    box-shadow: 4px 4px 9px rgb(58, 58, 58);
+    background-color: #f0ebdd;
+    transform: translateY(-10px);
+}
+
+#news-title{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight : bolder;
+    font-size: 27px;
+    color: black;
+}
+
+.card-detail{
+    padding: 25px;
+}
+
+.nav-link.active{
+
+
+    background: rgb(0, 0, 0);
+    transition: background .3s;
+    color: #f9f7f1 !important;
+}
+.container {
+    
+    margin: auto;
+    display: flex;
+    height:auto;
+    flex-wrap:wrap;
+    justify-content: center;
+    
+    
+    
+}
+
+
+.form-control me-2{
+    position: relative;
+      margin-top:-18px;
+      float:right;
+      right:-18px;
+      top:0px;
+}
+
+
+.card-header img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    z-index: 1;
+}
+
+
+
+
+
+p{
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+
+
+.choice {
+    background: #f9f7f1;
+    height: 60px; /* set same as height & line-height below */
+    display: flow-root;
+  }
+  
+  
+  .choice li {
+    display: inline-block;
+    list-style: none;
+    height: 60px; /* should be the same as line-height */
+    line-height: 60px; /* should be the same as height */
+    padding: 0 40px; /* "0" sets top and bottom padding to none */
+  }
+  
+  
+  .choice li:hover {
+    
+    background: rgb(0, 0, 0);
+    transition: background .3s;
+    color: #f9f7f1 !important;
+    
+  }
+
+
+  .choice a:hover {
+    
+    color: #f9f7f1 !important;
+  }
+  
+  
+  .nav-link {
+    color: #fff ;
+    display:block !important;
+    padding: 0 40px !important;
+  }
+
+.subhead{
+    text-transform: uppercase;
+    border-bottom: 2px solid #2f2f2f;
+    border-top: 2px solid #2f2f2f;
+    padding: 12px 0 12px 0;
+
+}
+
+
+.content{
+    font-size: 0;
+    line-height: 0;
+    word-spacing: -.31em;
+    display: inline-block;
+    margin: 30px 2% 0 2%;
+
+
+}
+
+.media {
+    -webkit-filter: sepia(100%) contrast(1) opacity(0.9);
+    filter: sepia(100%) grayscale(0.8) contrast(1) opacity(0.9);
+    mix-blend-mode: multiply;
+    width: 100%;
+}
+/*________________________________________________________________________________________________________________________________*/
+/*MEDIAQUERIES*/
+@media only all and (max-width: 1300px) {
+    .weatherforcastbox{
+        display: none;
+    }
+
+}
+@media only all and (max-width: 1200px) {
+    .collumn{
+        width: 31%;
+    }
+
+}
+    @media only all and (max-width: 900px) {
+    .collumn{
+        width: 47%;
+    }
+
+}
+@media only all and (max-width: 600px) {
+    .collumn{
+        width: 100%;
+    }
+	.collumn + .collumn {
+				border-left: none;
+      	border-bottom: 1px solid rgb(255, 255, 255);
+	}
+    header{
+        max-width: 320px;
+        font-size: 60px;
+        line-height: 54px;
+        overflow: hidden;
+    }
+
+}
+/*________________________________________________________________________________________________________________________________*/
+/*form*/
+
+.headerobjectswrapper{
+    z-index: 2;
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: center;
+    position:-webkit-sticky; position:sticky; top:0;
+    background-color: #f5f2e8;
+}
+
+.weatherforcastbox{
+
+    grid-column:2;
+    overflow: hidden;
+    padding-top: 5%;
+    position: flex;
+    width: 8rem;
+    height:5rem;
+    font-size-adjust: inherit;
+    
+    border: 0.25rem double #2f2f2f;
+    line-height: 1rem;
+    display: inline-flexbox;
+    
+}
+
+.title-img{
+    position: sticky;
+  overflow: hidden;
+  position: relative;
+  width: 20rem;
+  top: 0;
+  width:auto;
+  height: auto;
+
+}
+
+form{
+
+    position: -webkit-sticky;
+  position: sticky;
+
+    grid-column:3;
+    overflow: hidden;
+    position: absolute;
+    top: 1%;
+    left :70%;
+    
+    transform: translate(-1%,0%);
+    transition: all 1s;
+    width: 60px;
+    height: 60px;
+    background: #f9f7f1;
+    box-sizing: border-box;
+    border: 2.4px solid rgb(0, 0, 0);
+    padding: 2px;
+}
+
+input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;;
+    height: 50px;
+    line-height: 100px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1.5em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 0px;
+    padding: 0 20px;
+    background-color: #f9f7f1;
+}
+
+.fa{
+    box-sizing: border-box;
+    padding: 18px 35px 18px 18px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0%;
+    color: #07051a;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
+}
+
+form:hover,
+form:valid{
+    width: 250px;
+    cursor: pointer;
+}
+
+form:hover input,
+form:valid input{
+    display: block;
+}
+
+form:hover .fa,
+form:valid .fa{
+    background: #f9f7f1;
+    color: rgb(0, 0, 0);
+}
+
+
+a{
+  display: none;
+  top: 70px;
+  bottom:0;
+  left: 0;
+  right: 0;
+  font-size: 20px !important;
+  color: #000000 ;
+  text-align: center; 
+  width: 100%;
+}
+
+form:valid a{
+  display: block;
+}
+
+i{
+    color: black;
+}
+

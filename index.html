@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+      
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>News Aggregator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="./styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/5b16fe5d23.js" crossorigin="anonymous"></script>
+        
+        
+    </head>
+    <body>
+
+      <div class="head">
+        <div class="headerobjectswrapper" id="navbar">
+
+          <div class="weatherforcastbox">              
+            <span style="font-style: italic;">Burbank</span><br>
+              <i class="fa-solid fa-sun" id="icon"> </i>
+              <span class="temp"></span>
+              <p class="desc"></p>
+            </div>
+         
+          <img class="title-img" src="/images/daily.png"><a href="#">a</a>
+          
+          
+            <form action="">
+                  <input type="search" required id="news-input" autocomplete="off" placeholder="Enter Keyword" >
+                  <i class="fa fa-search"  id="search-button"></i>
+                  <a href="javascript:void(0)" ></a>
+            </form>
+          
+       
+
+        
+            
+        
+      </div>
+        
+        
+        
+        <div id="demo" class="subhead">York, MA - Thursday August 30, 1978 - Seven Pages</div>
+      
+        
+
+        <div class="choice">
+          <ul>
+            <li>
+              <a class="nav-link " id="sports" href="#" onclick="onNavItemClick('sports')">SPORTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " id="Entertainment" href="#" onclick="onNavItemClick('Entertainment')">ENTERTAINMENT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " id="politics" href="#" onclick="onNavItemClick('technology')">TECHNOLOGY</a>
+            </li>
+            
+          </ul>
+        </div>
+
+    
+
+          <main>
+            
+            <div class="container" id="cards-container" >
+              
+            </div>
+
+          </main>
+            
+            <template id="template-news-card">
+              
+              <div class="  border col-xl-4  col-sm-6 my-5 " id="card">
+                  <div class="card-header">
+                    <img src="https://via.placeholder.com/300x200" id="news-img" class="media">
+                  </div>
+                  <div class="card-detail">
+                    <h6 class="news-source" id="news-source">news source</h6>
+                    <h2 id="news-title">Title</h2>
+                    
+                    <p class="news-desc" id="news-desc"></p>
+                  </div>
+              </div>
+            
+            </template>
+          
+
+
+
+
+             
+        
+        
+        
+        <script src="" async defer></script>
+        <script src="./news.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    </body>
+</html>
